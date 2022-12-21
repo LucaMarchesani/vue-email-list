@@ -1,18 +1,25 @@
-body{
+body {
     background-color: teal;
 }
 
-ul{
+ul {
     list-style: none;
 }
 
-li{
-    color: whitesmoke;
+li {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: aquamarine;
     margin: 5px;
     font-family: 'Chivo Mono', monospace;
 }
 
-li h1{
-    color: chartreuse;
+li i {
+    color: whitesmoke;
+}
+
+li h1 {
+    text-align: left;
+    color: lime;
     font-family: 'Anton', sans-serif;
 }

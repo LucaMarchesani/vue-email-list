@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,28 +8,35 @@
     <title>Email List</title>
     <!-- GOOGLE FONTS -->
     <link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@400;500;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <!-- FONTAWSOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- CUSTOM STYLE CSS -->
     <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
+    
     <div id="app">
         <main>
             <ul>
-                <li><h1>Mail List</h1></li>
-                <li v-for="(element) in mailList">
+                <li>
+                    <h1>Mail List</h1>
+                </li>
+                <li v-show="mailList.length === 10" v-for="(element) in mailList">
+                    <i class="fa-solid fa-envelope"></i>
                     {{element}}
                 </li>
             </ul>
         </main>
     </div>
 
-
     <!-- VUE, AXIOS AND JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js"></script>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="./script.js"></script>
-    
 
 </body>
 </html>
